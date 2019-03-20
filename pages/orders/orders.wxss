@@ -1,0 +1,321 @@
+<<<<<<< HEAD
+/* pages/order/order.wxss */
+
+.order-page {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #fff;
+  padding: 10rpx 0;
+}
+.header .header-btn {
+  margin: 0;
+  padding: 0;
+  /* margin-bottom: 10rpx; */
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border: #4473C2 solid 2rpx;
+  /* background: #1B7BF5; */
+  background: #fff;
+  border-radius: 0;
+  color: #1B7BF5;
+  font-size: 28rpx;
+  font-weight: 100;
+}
+.header .not-btn {
+  border-right: none;
+  border-top-left-radius: 6rpx;
+  border-bottom-left-radius: 6rpx;
+}
+.header .done-btn {
+  border-top-right-radius: 6rpx;
+  border-bottom-right-radius: 6rpx;
+}
+.header .active {
+  background: #1B7BF5;
+  color: #fff;
+}
+.header .header-btn::after {
+  border: 0; 
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30rpx;
+}
+.content .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: #000;
+  background: #fff;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-top: 1rpx solid #f5f5f5;
+}
+
+.orders {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.orders .order {
+  width: 100%;
+  border-top: 20rpx solid #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+
+.orders .order .time-info {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.orders .order .time-info .info .number {
+  line-height: 80rpx;
+  font-size: 30rpx;
+  margin-right: 20rpx; 
+}
+.orders .order .time-info .info .time {
+  line-height: 80rpx;
+  font-size: 20rpx;
+}
+.orders .order .real-deposit {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  font-weight: 100;  
+}
+.orders .order .detail-money {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #a3a3a3
+}
+.orders .order .pay-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.icon-font {
+  width: 30rpx;
+  height: 30rpx;
+}
+.orders .order .pay {
+  line-height: 80rpx;
+  font-size: 24rpx;
+}
+.color-red {
+  color: red;
+}
+.none {
+  display: none;
+}
+.block {
+  display: block;
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-duration: 1s; /*淡入动画秒数 */
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
+}
+
+/* 动画效果 淡入*/
+@-webkit-keyframes fadeIn {
+	0% {
+	opacity: 0;
+	}
+	20%{
+		opacity: .2;
+	}
+	50% {
+		opacity: .5;
+	}
+	70%{
+		opacity: .7;
+	}
+	100% {
+		opacity: 1; 
+	}
+}
+
+=======
+/* pages/order/order.wxss */
+
+.order-page {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #fff;
+  padding: 10rpx 0;
+}
+.header .header-btn {
+  margin: 0;
+  padding: 0;
+  /* margin-bottom: 10rpx; */
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border: #4473C2 solid 2rpx;
+  /* background: #1B7BF5; */
+  background: #fff;
+  border-radius: 0;
+  color: #1B7BF5;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.header .not-btn {
+  border-right: none;
+  border-top-left-radius: 6rpx;
+  border-bottom-left-radius: 6rpx;
+}
+.header .done-btn {
+  border-top-right-radius: 6rpx;
+  border-bottom-right-radius: 6rpx;
+}
+.header .active {
+  background: #1B7BF5;
+  color: #fff;
+}
+.header .header-btn::after {
+  border: 0; 
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30rpx;
+}
+.content .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: #000;
+  background: #fff;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-top: 1rpx solid #f5f5f5;
+}
+
+.orders {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.orders .order {
+  width: 100%;
+  border-top: 20rpx solid #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+
+.orders .order .time-info {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.orders .order .time-info .info .number {
+  line-height: 80rpx;
+  font-size: 30rpx;
+  margin-right: 20rpx; 
+}
+.orders .order .time-info .info .time {
+  line-height: 80rpx;
+  font-size: 20rpx;
+}
+.orders .order .real-deposit {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  font-weight: 500;  
+}
+.orders .order .detail-money {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #a3a3a3
+}
+.orders .order .pay-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.icon-font {
+  width: 30rpx;
+  height: 30rpx;
+}
+.orders .order .pay {
+  line-height: 80rpx;
+  font-size: 24rpx;
+}
+.color-red {
+  color: red;
+}
+.none {
+  display: none;
+}
+.block {
+  display: block;
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-duration: 1s; /*淡入动画秒数 */
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
+}
+
+/* 动画效果 淡入*/
+@-webkit-keyframes fadeIn {
+	0% {
+	opacity: 0;
+	}
+	20%{
+		opacity: .2;
+	}
+	50% {
+		opacity: .5;
+	}
+	70%{
+		opacity: .7;
+	}
+	100% {
+		opacity: 1; 
+	}
+}
+
+>>>>>>> All

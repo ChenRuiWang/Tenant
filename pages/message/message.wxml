@@ -1,0 +1,37 @@
+<view class="message-page">
+  <navigation
+    title="消息"
+    height="{{height}}"
+    style="height: {{height}}px"
+  ></navigation>
+  <view class='messages'>
+    <navigator class='message' url='../order/order'>
+      <view class='message__title'>
+        交租成功提醒
+      </view>
+      <view class='message__time'>
+        2018年10月1日
+      </view>
+      <view class='message__content'>
+        您好!谭小姐, (新城-201)通过微信支付交租费(10月份)2笔账单共500元已成功.
+      </view>
+      <view class='message__detail'>
+        查看详情
+      </view>
+    </navigator>
+    <view class='message'>
+      <view class='message__title'>
+        交租成功提醒
+      </view>
+      <view class='message__time'>
+        2018年10月1日
+      </view>
+      <view class='message__content'>
+        您好!谭小姐, (新城-201)通过微信支付交租费(10月份)2笔账单共500元已成功.
+      </view>
+      <view class='message__detail'>
+        查看详情
+      </view>
+    </view>
+  </view>
+</view>

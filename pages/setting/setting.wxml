@@ -1,0 +1,37 @@
+<view class='setting-page'>
+  <navigation
+    title="设置"
+    height="{{height}}"
+    style="height: {{height}}px"
+  ></navigation>
+  <view class='avatar'>
+    <view>头像</view>
+    <image src="/images/avatar.jpg" class='image'></image>
+  </view>
+  <navigator url='./phone/phone' class='phone'>
+    <view>手机号码</view>
+    <view class='edit-phone'>
+      <view>17607475471</view>
+      <image src="/images/icon/right.png" class='right'></image>
+    </view>
+  </navigator>
+  <view class='item'>
+    <view>
+      证件类型
+    </view>
+    <view>
+      身份证
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      证件号码
+    </view>
+    <view>
+      430422200103299598
+    </view>
+  </view>
+  <view>
+    <button class='btn'>退出</button>
+  </view>
+</view>

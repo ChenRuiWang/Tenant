@@ -1,0 +1,44 @@
+<!--pages/repair/repair.wxml-->
+<view>
+  <headers
+    height="{{height}}"
+  ></headers>
+  <view class='main'>
+    <view class='nav'>
+      <view class='back' bindtap='back'>
+        <image src='/images/icon/back-white.png'></image>
+      </view>
+      <view class='title'>
+        <text>报修</text>
+      </view>
+      <navigator url="./history/history" class='history'>
+        记录
+      </navigator>
+    </view>
+    <view style='margin: 0 40rpx;'>
+      <view class='content'>
+        <view class="type">
+          <view class="section__title">报修类型</view>
+          <input type="text" bindinput="bindTypeInput" placeholder="请输入" />
+        </view>
+        <view class='reason'>
+          <view class='reason_title'>说明原因</view>
+          <textarea class='text' placeholder="请输入" name="textarea" />
+        </view>
+        <view class='photos'>
+          <view class='photos_title'>上传照片</view>
+          <view class='items'>
+            <view class='item' wx:for="{{images}}" wx:key="*this">
+              <image class='photo' src="{{item}}" mode="aspectFill" data-idx="{{index}}" catchtap="handleImagePreview"></image>
+              <image class='del' data-idx="{{index}}" src='/images/icon/delete.png' catchtap="removeImage"></image>
+            </view>
+            <view wx:if="{{images.length < 4}}" class="item add" bindtap='chooseImage'>
+              +
+            </view>
+          </view>
+        </view>
+      </view>
+      <button bindtap='confirm' class='btn'>预约</button>
+    </view>
+  </view>
+</view>

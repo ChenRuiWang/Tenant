@@ -1,0 +1,57 @@
+{
+  "pages": [
+<<<<<<< HEAD
+    "pages/order/order",
+    "pages/orders/orders",
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/user/user"
+=======
+    "pages/login/login",
+    "pages/checkout/checkout",
+    "pages/setting/setting",
+    "pages/setting/phone/phone",
+    "pages/message/message",
+    "pages/repair/history/history",
+    "pages/order/order",
+    "pages/repair/success/success",
+    "pages/repair/repair",
+    "pages/orders/orders",
+    "pages/landlady/landlady",
+    "pages/user/user",
+    "pages/pay/pay",
+    "pages/logs/logs"
+>>>>>>> All
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "富源公寓",
+<<<<<<< HEAD
+    "navigationBarTextStyle": "black"
+=======
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+>>>>>>> All
+  },
+  "tabBar": {
+    "color": "#d2d2d2",
+    "selectedColor": "#658fbd",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "账单",
+        "iconPath": "images/icon/bill.png",
+        "selectedIconPath": "images/icon/selected-bill.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "images/icon/user.png",
+        "selectedIconPath": "images/icon/selected-user.png"
+      }
+    ]
+  }
+}

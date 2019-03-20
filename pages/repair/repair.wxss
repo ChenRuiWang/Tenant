@@ -1,0 +1,135 @@
+/* pages/repair/repair.wxss */
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #fff;
+  padding: 0 40rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #017EF2;
+}
+
+.main .nav .back image{
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.main .nav .title {
+  font-size: 40rpx;
+  font-weight: 300;
+}
+
+.main .nav .history {
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.content .type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  color: #333333;
+  font-size: 32rpx;
+  border-bottom: 2rpx #e5e5e5 solid;
+}
+
+.content .type input {
+  text-align: right;
+  font-size: 32rpx;
+  padding-right: 20rpx;
+}
+
+.content .reason {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.content .reason .reason_title {
+  font-size: 32rpx;
+  color: #333333;
+  line-height: 100rpx;
+}
+
+.content .reason .text {
+  width: 100%;
+  font-size: 32rpx;
+  height: 170rpx;
+  border: 2rpx solid #e5e5e5;
+  border-radius: 10rpx;
+  padding-top: 30rpx;
+  text-indent: 30rpx;
+}
+
+.content .photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content .photos .photos_title {
+  font-size: 32rpx;
+  color: #333333;
+  line-height: 100rpx;
+}
+
+.content .photos .items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.content .photos .items .item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130rpx;
+  height: 130rpx;
+  background: #E4E4E4;
+  margin-right: 40rpx;
+  font-size: 60rpx;
+  color: #676767;
+}
+
+.photo {
+  width: 130rpx;
+  height: 130rpx;
+}
+.content .photos .items .item .del {
+  position: absolute;
+  right: -8rpx;
+  top: -8rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.add {
+  border-radius: 5rpx;
+}
+.btn {
+  color: #fff;
+  font-size: 40rpx;
+  height: 100rpx;
+  margin-top: 140rpx;
+  background: #017EF2;
+}

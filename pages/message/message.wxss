@@ -1,0 +1,37 @@
+.message-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40rpx;
+  padding-top: 40rpx;
+  border-bottom: 10rpx solid #e5e5e5;
+}
+
+.message__title {
+  font-size: 28rpx;
+  color: #121212;
+}
+
+.message__time {
+  font-size: 28rpx;
+  color: #818181;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.message__content {
+  font-size: 28rpx;
+  color: #818181;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+
+.message__detail {
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+}

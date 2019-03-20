@@ -1,0 +1,70 @@
+<view class='checkout-page'>
+  <navigation
+    title="退房"
+    height="{{height}}"
+    style="height: {{height}}px"
+  ></navigation>
+  <view>
+    <view class='item'>
+      <view>
+        小区/房号
+      </view>
+      <view>
+        新城-201
+      </view>
+    </view>
+    <view class='item'>
+      <view>
+        退房日期
+      </view>
+      <view>
+        <picker
+          mode="date"
+          value="{{date}}"
+          start="{{start}}"
+          bindchange="bindDateChange"
+        >
+          <view class="picker">
+            <view>{{date || '请选择'}}</view>
+            <image src='/images/icon/down.png' class='down'></image>
+          </view>
+          
+        </picker>
+      </view>
+    </view>
+    <view class='photos'>
+      <view class='photos_title'>上传照片</view>
+      <view class='items'>
+        <view class='item {{index > 3 ? "mt": ""}}' wx:for="{{images}}" wx:key="*this">
+          <image class='photo' src="{{item}}" mode="aspectFill" data-idx="{{index}}" catchtap="handleImagePreview"></image>
+          <image class='del' data-idx="{{index}}" src='/images/icon/delete.png' catchtap="removeImage"></image>
+        </view>
+        <view class='addC {{images.length > 3 ? "mt": ""}}' wx:if="{{images.length < 9}}">
+          <view  class="item add" bindtap='chooseImage'>
+            +
+          </view>
+          <view class='notice'>只限9张</view>
+        </view>
+      </view>
+    </view>
+    <view class='tips'>
+      <view class='tips__headers'>提示: </view>
+      <view class='tips__content'>
+        <view>1.退房后不能撤销。</view>
+        <view>2.确认后立刻退房, 房源将会对外销售。</view>
+        <view>3.与房东沟通后, 请及时结算账务。</view>
+      </view>
+    </view>
+    <button class='btn' bindtap='dialog'>结算</button>
+  </view>
+  <view wx:if="{{showDialog}}" bindtap='dialog' class='con'>
+    <view class='mask'>
+    </view>
+    <view class='dialog'>
+      <view class='dialog__content'>
+        审核中, 请稍等中!
+      </view>
+      <view class='dialog__btn' catchtap='dialog'>确认</view>
+    </view>
+  </view>
+</view>

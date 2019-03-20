@@ -1,0 +1,76 @@
+<!--pages/user/user.wxml-->
+<<<<<<< HEAD
+<text>pages/user/user.wxml</text>
+=======
+<view class='user-page'>
+  <view class='user'>
+    <!-- 60 -->
+    <view></view>
+    <view>
+      <image class='avatar' src='/images/avatar.jpg'></image>
+    </view>
+    <view class='info'>
+      <text style='margin-right: 10rpx;'>陈瑞旺</text>
+      <text>17607475471</text>
+    </view>
+  </view>
+  <view class='items'>
+    <view>
+      <navigator class='item' url='../landlady/landlady'>
+        <view class='main'>
+          <image class='icon' src='/images/icon/landlady.png'></image>
+          <text class='text'>房东资料</text>
+        </view>
+        <view>
+          <image class='right' src='/images/icon/right.png'></image>
+        </view>
+      </navigator>
+    </view>
+    <view>
+      <navigator class='item' url='../repair/repair'>
+        <view class='main'>
+          <image class='icon' src='/images/icon/repair.png'></image>
+          <text class='text'>报修</text>
+        </view>
+        <view>
+          <image class='right' src='/images/icon/right.png'></image>
+        </view>
+      </navigator>
+    </view>
+    <view>
+      <navigator class='item' url='../checkout/checkout'>
+        <view class='main'>
+          <image class='icon' src='/images/icon/checkout.png'></image>
+          <text class='text'>退房</text>
+        </view>
+        <view>
+          <image class='right' src='/images/icon/right.png'></image>
+        </view>
+      </navigator>
+    </view>
+    <view>
+      <navigator class='item' url='../message/message'>
+        <view class='main'>
+          <image class='icon' src='/images/icon/message.png'></image>
+          <text class='text'>消息</text>
+        </view>
+        <view>
+          <image class='right' src='/images/icon/right.png'></image>
+        </view>
+      </navigator>
+    </view>
+    <view>
+      <navigator  class='item' url='../setting/setting'>
+        <view class='main'>
+          <image class='icon' src='/images/icon/settings.png'></image>
+          <text class='text'>设置</text>
+        </view>
+        <view>
+          <image class='right' src='/images/icon/right.png'></image>
+        </view>
+      </navigator>
+    </view>
+
+  </view>
+</view>
+>>>>>>> All

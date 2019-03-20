@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+{
+  "navigationBarTitleText": "账单"
+=======
+{
+  "usingComponents": {
+    "headers": "/components/Headers/headers"
+  }
+>>>>>>> All
+}

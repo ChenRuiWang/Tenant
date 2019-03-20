@@ -1,0 +1,57 @@
+.setting-page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30rpx;
+}
+.avatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 130rpx;
+  border-bottom: 1rpx solid #fcfcfc;
+  font-size: 32rpx;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #fcfcfc;
+  font-size: 32rpx;
+  height: 100rpx;
+}
+
+.edit-phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #fcfcfc;
+}
+
+.image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.right {
+  width: 30rpx;
+  height: 30rpx;
+}
+.btn {
+  background: #177EFF;
+  color: #fff;
+  margin: 240rpx 30rpx;
+  margin-top: 240rpx;
+}

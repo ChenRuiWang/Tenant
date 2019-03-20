@@ -1,0 +1,7 @@
+<view>
+  <view class='nav bg-white' style='height:{{height * 2}}rpx'>
+    <view class='nav-title' style='margin-top: 50rpx'>
+      {{name}}
+    </view>
+  </view>
+</view>

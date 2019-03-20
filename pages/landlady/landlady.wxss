@@ -1,0 +1,21 @@
+/* pages/landlady/landlady.wxss */
+land-page {
+  display: flex;
+  flex-direction: column;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.items .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+  margin: 0 20rpx;
+}

@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+<view class='login-page'>
+  <view class='login-image'>
+    <image class='image' src='../../images/login.png'></image>
+  </view>
+  <view class='login-form'>
+    <view>
+      <input type='number' bindinput='getMobile' class='login-input mobile-input' maxlength="11" placeholder="手机号码" />
+    </view>
+    <view class='captcha-container'>
+      <input type='text' bindinput='getCaptcha' class='login-input captcha-input' placeholder="验证码" />
+      <text class='captcha' bindtap="getCode"> | {{ text }}</text>
+    </view>
+    <view class="flex-item bc_blue">
+      <button class='login-btn' bindtap='submit' size="default">登录</button>
+    </view>
+  </view>
+=======
+<view class='login-page'>
+  <view class='login-image'>
+    <image class='image' src='../../images/login.png'></image>
+  </view>
+  <view class='login-form'>
+    <view>
+      <input type='number' bindinput='getMobile' class='login-input mobile-input' maxlength="11" placeholder="手机号码" />
+    </view>
+    <view class='captcha-container'>
+      <input type='text' bindinput='getCaptcha' class='login-input captcha-input' placeholder="验证码" />
+      <text class='captcha' bindtap="getCode"> | {{ text }}</text>
+    </view>
+    <view class="flex-item bc_blue">
+      <button class='login-btn' bindtap='submit' size="default">登录</button>
+    </view>
+  </view>
+>>>>>>> All
+</view>

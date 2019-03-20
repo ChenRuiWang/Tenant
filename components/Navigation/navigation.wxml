@@ -1,0 +1,8 @@
+<view>
+  <view class='nav bg-white' style='height:{{height * 2}}rpx'>
+    <view class='nav-title'>
+      {{title}}
+      <image src='/images/icon/back.png' mode='aspectFit' class='back' bindtap='back'></image>
+    </view>
+  </view>
+</view>

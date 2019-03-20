@@ -1,0 +1,130 @@
+<!--pages/order/order.wxml-->
+<view class='order-page'>
+<<<<<<< HEAD
+=======
+  <navigation
+    title="{{title}}"
+    height="{{height}}"
+  ></navigation>
+  <view class='status' wx:if="{{order_status !== 0}}">
+    <block wx:if="{{order_status === 1}}">
+      <image class='img' src='/images/icon/failed-order.png'></image>
+      <text class='text'>5月公寓账单失败</text>
+    </block>
+    <block wx:elif="{{order_status === 2}}">
+      <image class='img' src='/images/icon/successful-order.png'></image>
+      <text class='text'>5月公寓账单成功</text>
+    </block>
+  </view>
+>>>>>>> All
+  <view class='content'>
+    <view class='time'>
+      <image class='redpack' src='/images/icon/redpack.png'></image>
+      <text>账单2018-05-01</text>
+    </view>
+    <view class='room'>
+      <text>小区/房号</text>
+      <text>新城花园-201</text>
+    </view>
+    <view class='item'>
+      <text>租期</text>
+      <text>2018.05.06-2019.05.07</text>
+    </view>
+<<<<<<< HEAD
+     <view class='item'>
+      <text>押金</text>
+      <text>200元</text>
+    </view>
+     <view class='item'>
+      <text>房租</text>
+      <text>200元/月</text>
+    </view>
+  </view>
+  
+  <view class='fooder'>
+    <text>fooder</text>
+=======
+    <view class='item'>
+      <text>押金</text>
+      <text>200元</text>
+    </view>
+    <view class='item'>
+      <text>房租</text>
+      <text>200元/月</text>
+    </view>
+    <view class='item'>
+      <text>水费</text>
+      <text>20元</text>
+    </view>
+    <view class='item'>
+      <text>水单价</text>
+      <text>6元</text>
+    </view>
+    <view class='item'>
+      <text>水量</text>
+      <text>2/立方</text>
+    </view>
+    <view class='item'>
+      <text>电费</text>
+      <text>10</text>
+    </view>
+    <view class='item'>
+      <text>电单价</text>
+      <text>1.2元</text>
+    </view>
+    <view class='item'>
+      <text>电量</text>
+      <text>8/度</text>
+    </view>
+    <view class='item'>
+      <text>维修费</text>
+      <text>20元</text>
+    </view>
+    <view class='item'>
+      <text>欠费</text>
+      <text>7元</text>
+    </view>
+    <view class='pay-money'>
+      <text class='real'>实付: </text>
+      <text class='money'>¥ 800.00</text>
+    </view>
+  </view>
+  <block wx:if="{{order_status === 2}}">
+    <view class='order-info'>
+      <view class='item'>
+        <text>订单时间</text>
+        <text>2018-05-01</text>
+      </view>
+      <view class='item'>
+        <text>订单编码</text>
+        <text>B12344</text>
+      </view>
+      <view class='item'>
+        <text>交易方式</text>
+        <text>微信支付</text>
+      </view>
+      <view class='item'>
+        <text>交易编码</text>
+        <text>B1234454</text>
+      </view>
+      <view class='item'>
+        <text>交易时间</text>
+        <text>2018-05-08</text>
+      </view>
+    </view>
+  </block>
+  <view class='fooder' wx:if="{{order_status === 0}}">
+    <text class='text-left'>
+      <text class='left'>应付合计: </text>
+      <text class='money'>¥ 800.00</text>
+    </text>
+    <navigator
+      class='btn'
+      url="/pages/pay/pay"
+      hover-class="navigator-hover"
+    >
+      <text>确认支付</text>
+    </navigator>
+>>>>>>> All
+  </view>
+</view>

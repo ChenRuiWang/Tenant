@@ -1,0 +1,48 @@
+<view class='history-page'>
+<navigation
+    style="height: {{height}}px"
+    height="{{height}}"
+    title="报修记录"
+  ></navigation>
+  <view class='items'>
+    <view class='item' wx:for="{{items}}" wx:key="index">
+      <view class='item__header'>
+        <view class='title'>{{item.number}}</view>
+        <view class='status' bindtap='toggle' data-index="{{index}}">
+          <view class='text'>{{item.status}}</view>
+          <image class='icon' src="/images/icon/{{item.show ? 'up' : 'down'}}.png"></image>
+        </view>
+      </view>
+    
+      <view class='none {{item.show ? " block" : ""}}'>
+        <view class='item__content'>
+        <view class='detail'>
+          <view>报修类型</view>
+          <view>{{item.type}}</view>
+        </view>
+        <view class='detail'>
+          <view>选择报修</view>
+          <view>{{item.choose}}</view>
+        </view> 
+        <view class='detail'>
+          <view>维修照片</view>
+          <view class='show' data-index="{{index}}">查看</view>
+        </view>
+        <view class='detail'>
+          <view>原因说明</view>
+          <view>{{item.reason || '无'}}</view>
+        </view> 
+        <view class='detail'>
+          <view>维修员</view>
+          <view>{{item.repairman}}</view>
+        </view>
+        <view class='detail mb'>
+          <view>手机号码</view>
+          <view>{{item.phone}}</view>
+        </view>    
+      </view>
+      </view>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<view>
+  <navigation
+    height="{{height}}"
+    title="预约成功"
+  ></navigation>
+  <view class='main'>
+    <image src='/images/icon/success.png' class="success"></image>
+    <view class='text'>预约成功</view>
+    <view class='await'>等待维修员联系</view>
+    <button class='btn' bindtap='toHistory'>查看报修记录</button>
+  </view>
+</view>

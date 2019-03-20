@@ -1,0 +1,47 @@
+.phone-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 40rpx;
+}
+
+.items .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120rpx;
+  border-bottom: 2rpx solid #fcfcfc;
+  font-size: 32rpx;
+}
+
+.items .item input {
+  text-align: right;
+}
+
+.captcha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.btn-sm {
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-left: 10rpx;
+  background: #177EFF;
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.btn {
+  background: #177EFF;
+  color: #fff;
+  margin: 240rpx 30rpx;
+  margin-top: 240rpx;
+}

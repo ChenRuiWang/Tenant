@@ -1,0 +1,41 @@
+page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.success {
+  width: 130rpx;
+  height: 130rpx;
+}
+.text {
+  font-size: 24rpx;
+  margin-top: 30rpx;
+  margin-bottom: 40rpx;
+  color: #B5B5B5;
+}
+
+.await {
+  font-size: 24rpx;
+  margin-bottom: 30rpx;
+  color: #333;
+}
+
+.btn {
+  width: 200rpx;
+  font-size: 24rpx;
+  color: #fff;
+  background: #1574DA;
+  height: 70rpx;
+  line-height: 70rpx;
+}

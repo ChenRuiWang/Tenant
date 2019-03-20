@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="login" style='flex-direction:row;'>
+    <view class=''>
+      <image class='login-img' src='../../images/login.jpg'></image>
+    </view>
+    <view>
+      <input placeholder="这是一个可以自动聚焦的input" auto-focus />
+    </view>
+  </view>
+  
+</view>
+
